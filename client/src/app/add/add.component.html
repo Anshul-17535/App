@@ -1,0 +1,19 @@
+<div class="card" style="width: 18rem; margin:30px auto;">
+    
+    <form (submit)="addContact()" style="padding:20px" >
+        <div class="form-group">
+          <label for="formGroupExampleInput">First name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="first_name" name="first_name" placeholder="First Name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Last name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2"  [(ngModel)]="last_name" name="last_name" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <label for="formGroupExampleInput2">Another label</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" [(ngModel)]="phone" name="phone" placeholder="PHONE NO.">
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+
+</div>
